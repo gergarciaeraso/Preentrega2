@@ -5,23 +5,19 @@
     background-image: url(/assets/fondo.jpeg);
  }
 
-
 .menu-nav{
     position: fixed;
     top: 1px;
     width: 100%;
  }
-.logo-nav {
+
+.logo-nav{
     width: 25px;
 }
-
-
-/*Inicio*/
 
 main{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .logo-container{
@@ -30,8 +26,8 @@ main{
     padding-top: 50px;
     justify-content: center;
     align-items: center;
-    
 }
+
 .logo-img{
     display: flex;
     justify-content: center;
@@ -52,7 +48,6 @@ main{
     font-size: 5em;
     text-align: center;  
     background-color: #d9f057; background-image: none;
-
 }
 
 /*Pages*/
@@ -74,17 +69,15 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    width: 100%;
     background-color: #d9f057; background-image: none;
  }
  
  .card-img {
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px; 
-    width: 60% ;
-
  }
 
  .card p {
@@ -106,6 +99,15 @@ main{
    
 }
 
+footer{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200
+    
+}
 
 /*contacto*/
 
@@ -118,10 +120,3 @@ main{
     background-color: #F0EC57; background-image: none;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 200
-    
-}
