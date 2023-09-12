@@ -1,0 +1,93 @@
+ /* reset */
+ *{
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    background-image: url(/assets/fondo.jpeg);
+ }
+ 
+
+
+ .menu {
+    background-color:#888DA7;
+    background-image: none;
+}
+
+.menu li,ul,.enlace {
+    font-size: 1em; font-style: italic;
+    font-weight: 200;
+    background-color: #888DA7; background-image: none;
+} 
+.logo-barra {
+    width: 25px;
+}
+/*Inicio*/
+
+.titulo-ini{
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;  
+    background-color: #F0EC57; background-image: none;
+
+}
+
+.logo{
+    border-radius: 100%;
+    width: 35%;
+    border: 2px solid black;
+}
+
+/*Pages*/
+.enlace{
+    margin: 10px;
+}
+ .titulo-card {
+    background-color: #7DCFB6; background-image: none;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+ }
+ 
+ .card, .card p {
+    width: 100%;
+    background-color: #F0EC57; background-image: none;
+ }
+ 
+ .card-img {  
+    width: 60% ;
+
+ }
+
+ .card p {
+      font-size: 20px; color: black ;
+      font-weight: 200;
+      text-align: center;
+}
+
+.banner, .banner p {
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/banner.jpeg);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400; color: white;
+   
+}
+
+
+/*contacto*/
+
+.card-contacto, .card-contacto a{
+    font-size: 1.5em; color: white;
+    font-weight: 200;
+    background-color: #888DA7; background-image: none;
+}
+.map{
+    background-color: #F0EC57; background-image: none;
+}
+
+footer p{
+    text-align: center;
+    font-weight: 200
+    
+}
