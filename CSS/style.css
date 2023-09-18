@@ -32,6 +32,14 @@
     width: 30px; 
 }
 
+.navbar-toggler-icon {
+    background-color: #d9f057; /* Cambiar color de fondo al achicar */
+    border: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
 .cuerpo{
     grid-area: cuerpo;
     display: flex;
@@ -96,7 +104,7 @@
     margin-top: 5px;
     padding: 10px 200px 10px 200px;
     background-color: #d9f057; background-image: none;
-    font-size: 20px; color: black ;
+    font-size: 2em; color: black ;
     font-weight: 200;
     text-align: center;
 }
@@ -178,6 +186,7 @@
     row-gap: 20px;
     padding: 5px;
     margin-left: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
 }
 
 .map-google{
@@ -197,6 +206,7 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
 }
 
 .form-titulo {
@@ -230,7 +240,7 @@ textarea {
     padding: 10px;
     border: 1px solid black; 
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 textarea {
@@ -249,10 +259,51 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.3em;
 }
 
 input[type="submit"]:hover {
     background-color: #555; background-image: none;
 }
+/* M-Q*/
+@media (min-width: 577px) and (max-width: 992px) {
+    *{font-size: 11px;
+    } 
+    .cuerpo, .pie {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .formulario {
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+    .map-google {
+        width: 100%; 
+        height: 300px; 
+    }
+}
 
+@media (max-width: 576px) {
+    *{font-size: 8px;
+    }
+    
+    .cuerpo, .pie {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formulario {
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+    .map-google {
+        width: 100%; 
+        height: 300px; 
+    }
+}
