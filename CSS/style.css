@@ -126,7 +126,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366;
+    background-color: none;
     padding: 10px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -163,12 +163,10 @@
 }
 
 .instagram-button {
-    background-color: #e4405f; 
     border-color: #e4405f;
 }
 
 .twitter-button {
-    background-color: #1da1f2;
     border-color: #1da1f2; 
 }
 
