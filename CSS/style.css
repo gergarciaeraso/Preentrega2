@@ -106,7 +106,7 @@
     background-color: #d9f057; background-image: none;
     font-size: 2em; color: black ;
     font-weight: 200;
-    text-align: center;
+    text-align: justify;
 }
  
 .banner{
@@ -274,8 +274,15 @@ input[type="submit"]:hover {
         justify-content: center;
         width: 100%;
     }
+    .logo-img{
+        width: 40%;
+    }
     .texto-caja{        
         padding: 5px 0px 5px 0px;
+    }
+    .card-imagen{
+        width: 80%;
+        padding: 10px;
     }
     .formulario {
         max-width: 100%; 
@@ -290,7 +297,6 @@ input[type="submit"]:hover {
 @media (max-width: 576px) {
     *{font-size: 8px;
     }
-    
     .cuerpo, .pie {
         display: flex;
         flex-wrap: wrap;
@@ -298,8 +304,15 @@ input[type="submit"]:hover {
         justify-content: center;
         width: 100%;
     }
+    .logo-img{
+        width: 70%;
+    }
     .texto-caja{        
         padding: 5px 0px 5px 0px;
+    }
+    .card-imagen{
+        width: 100%;
+        padding: 0;
     }
     .formulario {
         max-width: 100%; 
