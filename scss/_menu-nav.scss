@@ -1,15 +1,16 @@
 .menu-nav{
     position: fixed;
-    @include caja-titulo (100%, 1px);
+    top: 1px;
+    @include caja-titulo (100%, none);
     z-index: 1000;
 }
 .logo-navbar{
-    @include caja-titulo (30px, 0);
+    @include caja-titulo (30px, none);
 }
 .navbar-toggler-icon {
     background-color: $lima; /* Cambiar color de fondo al achicar */
     border: black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
+    box-shadow: $sombra-caja ;
     padding: 5px 8px;
     border-radius: 4px;
 }

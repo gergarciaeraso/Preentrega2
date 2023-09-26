@@ -25,16 +25,21 @@
   grid-area: banner;
 }
 
+.pie {
+  grid-area: pie;
+}
+
 .menu-nav {
   position: fixed;
+  top: 1px;
   width: 100%;
-  margin-top: 1px;
+  margin-top: none;
   z-index: 1000;
 }
 
 .logo-navbar {
   width: 30px;
-  margin-top: 0;
+  margin-top: none;
 }
 
 .navbar-toggler-icon {
@@ -46,20 +51,23 @@
 }
 
 .cuerpo {
+  display: flex;
   margin-top: 80px;
+  flex-wrap: wrap;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 20px 0 20px 0;
 }
 
 .logo-img {
   border-radius: 50%;
   width: 25%;
-  border: 1px solid gray;
+  border: 1px solid #888DA7;
 }
 
 .titulo-ini {
@@ -132,23 +140,22 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: none;
+  background-image: none;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   text-decoration: none;
 }
-
 .boton-whatsapp img {
-  width: 50px;
   height: 50px;
+  width: 50px;
+  margin-top: 0;
   display: block;
-  margin: 0 auto;
+  background-image: none;
 }
 
 .pie {
-  grid-area: pie;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,10 +168,10 @@
   margin-top: 10px;
   gap: 2px;
 }
-
-.img-logo-redes {
-  width: 30px;
+.redes-sociales .img-logo-redes {
   height: 30px;
+  width: 30px;
+  margin-top: none;
   margin: 0 10px 5px;
 }
 
@@ -179,15 +186,17 @@
 /* Card Contacto*/
 .container-map {
   display: flex;
-  height: 450px;
-  align-items: center;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #888DA7;
+  background-image: none;
+  height: 450px;
+  width: 600px;
+  margin-top: 0;
+  flex-direction: column;
   font-size: 1.5em;
   color: white;
   font-weight: 200;
-  background-color: #888DA7;
-  background-image: none;
   border-radius: 5px;
   row-gap: 20px;
   padding: 5px;
@@ -199,21 +208,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
   height: 350px;
+  width: 450px;
+  margin-top: 0;
   border-radius: 5px;
 }
 
 /*formulario incompleto*/
 .formulario {
-  max-width: 400px;
-  border-radius: 5px;
   background-color: #414F9E;
   background-image: none;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-left: 200px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  border-radius: 5px;
 }
 
 .form-titulo {
@@ -262,7 +271,7 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: #7DA03A;
+  background-color: #d9f057;
   background-image: none;
   color: black;
   padding: 10px 20px;
@@ -270,10 +279,11 @@ input[type=submit] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.3em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 input[type=submit]:hover {
-  background-color: #555;
+  background-color: #888DA7;
   background-image: none;
 }
 

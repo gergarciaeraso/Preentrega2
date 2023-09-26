@@ -1,40 +1,32 @@
 /* Card Contacto*/
+
 .container-map{
-    display: flex;
-    height: 450px;
-    align-items: center;
+    @include flex-centrado;
+    @include relleno-gris;
+    @include caja (450px, 600px, 0);
     flex-direction: column;
-    justify-content: center;
     font-size: 1.5em; color: white; 
     font-weight: 200;
-    background-color: #888DA7; background-image: none;
     border-radius: 5px;
     row-gap: 20px;
     padding: 5px;
     margin-left: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
+    box-shadow: $sombra-caja;
 }
-
 .map-google{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 350px;
+    @include flex-centrado;
+    @include caja (350px, 450px, 0);
     border-radius: 5px;
 }
-
 /*formulario incompleto*/
 .formulario {
+    @include relleno-azul;
+    padding: 20px;
+    margin-left: 200px;
+    box-shadow: $sombra-caja;
     max-width: 400px;
     border-radius: 5px;
-    background-color: #414F9E; background-image: none;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 200px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
 }
-
 .form-titulo {
     text-align: center;
     color: white; background-image: none;
@@ -75,19 +67,20 @@ textarea {
 
 .boton-enviar {
     text-align: center;
-    background-color: #414F9E; background-image: none;   
+    @include relleno-azul;   
 }
 
 input[type="submit"] {
-    background-color: #7DA03A; background-image: none;
+    @include relleno-lima;
     color: black ;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.3em;
+    box-shadow: $sombra-boton;
 }
 
 input[type="submit"]:hover {
-    background-color: #555; background-image: none;
+    @include relleno-gris;
 }

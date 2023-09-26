@@ -2,26 +2,21 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: none;
+    background-image: none;
     padding: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: $sombra-boton;
     z-index: 1000; 
     text-decoration: none;
-}
-
-.boton-whatsapp img {
-    width: 50px; 
-    height: 50px; 
-    display: block;
-    margin: 0 auto;
+    & img {
+        @include caja (50px, 50px, 0);
+        display: block;
+        background-image: none;
+    }
 }
 
 .pie{
-    grid-area: pie;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centrado;
     font-weight: 200;
     padding: 20px 0;
     text-align: center;
@@ -30,14 +25,11 @@
 .redes-sociales {
     margin-top: 10px;
     gap: 2px;
-}
-
-.img-logo-redes {
-    width: 30px; 
-    height: 30px; 
+    & .img-logo-redes {
+    @include caja (30px, 30px, none);
     margin: 0 10px 5px;
+    }
 }
-
 .instagram-button {
     border-color: #e4405f;
 }

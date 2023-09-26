@@ -1,8 +1,11 @@
 .cuerpo{
+    display: flex;
     margin-top: 80px;
+    flex-wrap: wrap
 }
 .logo-container{
     @include flex-centrado;
+    width: 100%;
     padding: 20px 0 20px 0;
 }
 .logo-img{

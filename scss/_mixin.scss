@@ -2,13 +2,26 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-} 
+}
+@mixin caja ($alto, $ancho, $marg-sup){
+    height: $alto;
+    width: $ancho;
+    margin-top: $marg-sup;
+}
 @mixin relleno-lima{
     background-color: $lima; 
     background-image: none;
 }
 @mixin relleno-aqua{
     background-color: $aqua; 
+    background-image: none;
+}
+@mixin relleno-azul{
+    background-color: $azul; 
+    background-image: none;
+}
+@mixin relleno-gris{
+    background-color: $gris; 
     background-image: none;
 }
 @mixin estilo-titulo{
@@ -23,11 +36,6 @@
     color: black;
     font-weight: 200;
     text-align: justify;
-}
-@mixin caja ($alto, $ancho, $marg-sup){
-    height: $alto;
-    width: $ancho;
-    margin-top: $marg-sup;
 }
 @mixin caja-titulo ($ancho, $marg-sup){
     width: $ancho;
