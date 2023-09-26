@@ -1,0 +1,6 @@
+.banner{
+    @include flex-centrado;
+    @include caja (200px, 100%, 0);
+    @include estilo-titulo;
+    background-image: url(../assets/banner.jpeg);
+}

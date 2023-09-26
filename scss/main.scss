@@ -1,0 +1,17 @@
+// reset
+@import './variables';
+@import './reset';
+@import './mixin';
+@import './layout';
+
+
+// layout
+@import './menu-nav';
+@import './cuerpo';
+@import './banner';
+@import './pie';
+@import './contacto';
+
+//media queries
+@import './mq';
+ 

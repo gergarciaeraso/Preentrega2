@@ -1,0 +1,341 @@
+* {
+  margin: 2px;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  background-image: url(/assets/fondo.jpeg);
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-rows: 0, 5fr fr fr 0, 3fr;
+  grid-template-areas: "menu-nav   menu-nav    menu-nav" "cuerpo     cuerpo      cuerpo" "banner     banner      banner" "pie        pie         pie";
+}
+
+.menu-nav {
+  grid-area: menu-nav;
+}
+
+.cuerpo {
+  grid-area: cuerpo;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.menu-nav {
+  position: fixed;
+  width: 100%;
+  margin-top: 1px;
+  z-index: 1000;
+}
+
+.logo-navbar {
+  width: 30px;
+  margin-top: 0;
+}
+
+.navbar-toggler-icon {
+  background-color: #d9f057; /* Cambiar color de fondo al achicar */
+  border: black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.cuerpo {
+  margin-top: 80px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.logo-img {
+  border-radius: 50%;
+  width: 25%;
+  border: 1px solid gray;
+}
+
+.titulo-ini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 3em;
+  color: whitesmoke;
+  font-weight: 400;
+  text-align: center;
+  background-color: #d9f057;
+  background-image: none;
+  color: black;
+  font-family: "Changa", sans-serif;
+}
+.titulo-card {
+  height: 80px;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7DCFB6;
+  background-image: none;
+  font-size: 3em;
+  color: whitesmoke;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__imagen {
+  width: 60%;
+  padding: 50px;
+  border-radius: 5px;
+}
+.card__texto {
+  background-color: #d9f057;
+  background-image: none;
+  font-size: 2em;
+  color: black;
+  font-weight: 200;
+  text-align: justify;
+  margin-top: 5px;
+  padding: 10px 200px 10px 200px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  margin-top: 0;
+  font-size: 3em;
+  color: whitesmoke;
+  font-weight: 400;
+  text-align: center;
+  background-image: url(../assets/banner.jpeg);
+}
+
+.boton-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.boton-whatsapp img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.pie {
+  grid-area: pie;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.redes-sociales {
+  margin-top: 10px;
+  gap: 2px;
+}
+
+.img-logo-redes {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 5px;
+}
+
+.instagram-button {
+  border-color: #e4405f;
+}
+
+.twitter-button {
+  border-color: #1da1f2;
+}
+
+/* Card Contacto*/
+.container-map {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 200;
+  background-color: #888DA7;
+  background-image: none;
+  border-radius: 5px;
+  row-gap: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.map-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+/*formulario incompleto*/
+.formulario {
+  max-width: 400px;
+  border-radius: 5px;
+  background-color: #414F9E;
+  background-image: none;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form-titulo {
+  text-align: center;
+  color: white;
+  background-image: none;
+}
+
+form {
+  text-align: left;
+  background-image: none;
+}
+
+.campo {
+  margin-bottom: 20px;
+  background-image: none;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  background-image: none;
+  color: white;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+textarea {
+  height: 100px;
+}
+
+.boton-enviar {
+  text-align: center;
+  background-color: #414F9E;
+  background-image: none;
+}
+
+input[type=submit] {
+  background-color: #7DA03A;
+  background-image: none;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+  background-image: none;
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  * {
+    font-size: 11px;
+  }
+  .cuerpo, .pie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo-img {
+    width: 40%;
+  }
+  .card__texto {
+    padding: 5px 0px 5px 0px;
+  }
+  .card__imagen {
+    width: 80%;
+    padding: 10px;
+  }
+  .formulario {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .map-google {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  * {
+    font-size: 8px;
+  }
+  .cuerpo, .pie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo-img {
+    width: 70%;
+  }
+  .card__texto {
+    padding: 5px 0px 5px 0px;
+  }
+  .card__imagen {
+    width: 100%;
+    padding: 0;
+  }
+  .formulario {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .map-google {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

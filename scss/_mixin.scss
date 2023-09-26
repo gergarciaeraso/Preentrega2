@@ -1,0 +1,35 @@
+@mixin flex-centrado{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+} 
+@mixin relleno-lima{
+    background-color: $lima; 
+    background-image: none;
+}
+@mixin relleno-aqua{
+    background-color: $aqua; 
+    background-image: none;
+}
+@mixin estilo-titulo{
+    font-size: 3em; 
+    color: whitesmoke;
+    font-weight: 400;
+    text-align: center;
+
+}
+@mixin estilo-texto{
+    font-size: 2em; 
+    color: black;
+    font-weight: 200;
+    text-align: justify;
+}
+@mixin caja ($alto, $ancho, $marg-sup){
+    height: $alto;
+    width: $ancho;
+    margin-top: $marg-sup;
+}
+@mixin caja-titulo ($ancho, $marg-sup){
+    width: $ancho;
+    margin-top: $marg-sup;
+}

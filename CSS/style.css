@@ -81,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7DCFB6; background-image: none;
+    background-color: #7DCFB6;  ;
     font-size: 3em;
     font-weight: 400;
     text-align: center;
@@ -94,13 +94,13 @@
     align-items: center;
  }
 
- .card-imagen{
+ .card__imagen{
     width: 60%;
     padding: 50px;
     border-radius: 5px;  
  }
 
- .texto-caja{
+ .card__texto{
     margin-top: 5px;
     padding: 10px 200px 10px 200px;
     background-color: #d9f057; background-image: none;
@@ -277,10 +277,10 @@ input[type="submit"]:hover {
     .logo-img{
         width: 40%;
     }
-    .texto-caja{        
+    .card__texto{        
         padding: 5px 0px 5px 0px;
     }
-    .card-imagen{
+    .card__imagen{
         width: 80%;
         padding: 10px;
     }
@@ -307,10 +307,10 @@ input[type="submit"]:hover {
     .logo-img{
         width: 70%;
     }
-    .texto-caja{        
+    .card__texto{        
         padding: 5px 0px 5px 0px;
     }
-    .card-imagen{
+    .card__imagen{
         width: 100%;
         padding: 0;
     }

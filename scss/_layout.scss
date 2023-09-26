@@ -1,0 +1,19 @@
+.grid__container{
+    display: grid;
+    grid-template-columns:repeat (3, 1fr);
+    grid-template-rows: 0,5fr fr fr 0,3fr;
+    grid-template-areas: 
+    "menu-nav   menu-nav    menu-nav"
+    "cuerpo     cuerpo      cuerpo"
+    "banner     banner      banner"
+    "pie        pie         pie";
+}
+.menu-nav{
+    grid-area: menu-nav;
+}
+.cuerpo{
+    grid-area: cuerpo;
+}
+.banner{
+    grid-area: banner;
+}

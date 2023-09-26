@@ -1,0 +1,44 @@
+.cuerpo{
+    margin-top: 80px;
+}
+.logo-container{
+    @include flex-centrado;
+    padding: 20px 0 20px 0;
+}
+.logo-img{
+    border-radius: 50%;
+    width: 25%;
+    border: 1px solid $gris;
+}
+.titulo{
+    &-ini{
+    @include flex-centrado;
+    @include caja-titulo (100%, 10px);
+    @include estilo-titulo;
+    @include relleno-lima;
+    color: black;
+    font-family: 'Changa', sans-serif;
+
+    }
+    &-card{
+    @include caja (80px, 100%, 0);
+    @include flex-centrado;
+    @include relleno-aqua;
+    @include estilo-titulo;
+    }
+}
+.card{
+    width: 100%;
+    @include flex-centrado;
+    &__imagen{
+        width: 60%;
+        padding: 50px;
+        border-radius: 5px; 
+    }
+    &__texto{
+        @include relleno-lima;
+        @include estilo-texto;
+        margin-top: 5px;
+        padding: 10px 200px 10px 200px;
+    }
+}
