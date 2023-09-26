@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  background-image: url(/assets/fondo.jpeg);
+  background-image: url(../assets/fondo.jpeg);
 }
 
 .grid__container {
@@ -293,9 +293,9 @@ input[type=submit]:hover {
   }
   .cuerpo, .pie {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
   }
   .logo-img {
@@ -313,8 +313,9 @@ input[type=submit]:hover {
     margin-left: 0;
   }
   .map-google {
-    width: 100%;
     height: 300px;
+    width: 100%;
+    margin-top: none;
   }
 }
 @media (max-width: 576px) {
@@ -323,9 +324,9 @@ input[type=submit]:hover {
   }
   .cuerpo, .pie {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
   }
   .logo-img {
@@ -338,13 +339,24 @@ input[type=submit]:hover {
     width: 100%;
     padding: 0;
   }
+  .banner {
+    height: 100px;
+    width: 100%;
+    margin-top: 2px;
+  }
   .formulario {
     max-width: 100%;
     margin-left: 0;
   }
-  .map-google {
-    width: 100%;
+  .container-map {
     height: 300px;
+    width: 350px;
+    margin-top: 2px;
+  }
+  .map-google {
+    height: 280px;
+    width: 100%;
+    margin-top: none;
   }
 }
 

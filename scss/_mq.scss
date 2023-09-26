@@ -2,10 +2,8 @@
     *{font-size: 11px;
     } 
     .cuerpo, .pie {
-        display: flex;
+        @include flex-centrado;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         width: 100%;
     }
     .logo-img{
@@ -23,8 +21,7 @@
         margin-left: 0; 
     }
     .map-google {
-        width: 100%; 
-        height: 300px; 
+       @include caja (300px, 100%, none);
     }
 }
 
@@ -32,10 +29,8 @@
     *{font-size: 8px;
     }
     .cuerpo, .pie {
-        display: flex;
+        @include flex-centrado;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         width: 100%;
     }
     .logo-img{
@@ -48,12 +43,17 @@
         width: 100%;
         padding: 0;
     }
+    .banner{
+        @include caja (100px, 100%, 2px)
+    }
     .formulario {
         max-width: 100%; 
         margin-left: 0; 
     }
+    .container-map{
+        @include caja (300px, 350px, 2px);
+    }
     .map-google {
-        width: 100%; 
-        height: 300px; 
+        @include caja (280px, 100%, none);
     }
 }
