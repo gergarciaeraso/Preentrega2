@@ -10,7 +10,7 @@
         width: 40%;
     }
     .card__texto{        
-        padding: 5px 0px 5px 0px;
+        padding: 5px 2px 5px 2px;
     }
     .card__imagen{
         width: 80%;
@@ -37,7 +37,7 @@
         width: 70%;
     }
     .card__texto{        
-        padding: 5px 0px 5px 0px;
+        padding: 5px 2px 5px 2px;
     }
     .card__imagen{
         width: 100%;
@@ -52,6 +52,7 @@
     }
     .container-map{
         @include caja (300px, 350px, 2px);
+        
     }
     .map-google {
         @include caja (280px, 100%, none);

@@ -12,6 +12,10 @@
     border-radius: 50%;
     width: 25%;
     border: 1px solid $gris;
+    transition: width 2s;
+}
+.logo-img:hover{
+    width: 35%;
 }
 .titulo{
     &-ini{
