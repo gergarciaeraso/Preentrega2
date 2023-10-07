@@ -330,6 +330,7 @@ input[type=submit]:hover {
   }
   .logo-img {
     width: 40%;
+    transition: none;
   }
   .card__texto {
     padding: 5px 2px 5px 2px;
@@ -361,6 +362,7 @@ input[type=submit]:hover {
   }
   .logo-img {
     width: 70%;
+    transition: none;
   }
   .card__texto {
     padding: 5px 2px 5px 2px;
