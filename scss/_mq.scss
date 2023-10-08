@@ -21,7 +21,7 @@
     .card__texto{        
         padding: 5px 2px 5px 2px;
     }
-    .card__imagen{
+    .card__imagen, .card__imagen__contacto{
         width: 80%;
         padding: 10px;
     }
@@ -33,6 +33,7 @@
        @include caja (300px, 100%, none);
     }
 }
+
 
 @media (max-width: 576px) {
     *{font-size: 8px;
@@ -48,7 +49,7 @@
     .card__texto{        
         padding: 5px 2px 5px 2px;
     }
-    .card__imagen{
+    .card__imagen, .card__imagen__contacto{
         width: 100%;
         padding: 0;
     }
