@@ -50,14 +50,6 @@
   border-radius: 4px;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .nav-item_dropdown {
   background-color: #888DA7;
   background-image: none;
@@ -91,13 +83,7 @@
 
 .logo-img {
   border-radius: 50%;
-  width: 25%;
   border: 1px solid #888DA7;
-  transition: width 2s;
-}
-
-.logo-img:hover {
-  width: 35%;
 }
 
 .titulo-ini {
@@ -317,6 +303,15 @@ input[type=submit]:hover {
   background-image: none;
 }
 
+@media screen and (min-width: 993px) {
+  .logo-img {
+    width: 25%;
+    transition: width 2s;
+  }
+  .logo-img:hover {
+    width: 35%;
+  }
+}
 @media (min-width: 577px) and (max-width: 992px) {
   * {
     font-size: 11px;
@@ -330,7 +325,6 @@ input[type=submit]:hover {
   }
   .logo-img {
     width: 40%;
-    transition: none;
   }
   .card__texto {
     padding: 5px 2px 5px 2px;
@@ -361,8 +355,7 @@ input[type=submit]:hover {
     width: 100%;
   }
   .logo-img {
-    width: 70%;
-    transition: none;
+    width: 40%;
   }
   .card__texto {
     padding: 5px 2px 5px 2px;

@@ -1,3 +1,12 @@
+@media screen and (min-width: 993px) {
+    .logo-img {
+        width: 25%;
+        transition: width 2s;
+    }
+    .logo-img:hover {
+        width: 35%;
+    }
+}
 @media (min-width: 577px) and (max-width: 992px) {
     *{font-size: 11px;
     } 
@@ -8,7 +17,6 @@
     }
     .logo-img{
         width: 40%;
-        transition: none;
     }
     .card__texto{        
         padding: 5px 2px 5px 2px;
@@ -35,8 +43,7 @@
         width: 100%;
     }
     .logo-img{
-        width: 70%;
-        transition: none;
+        width: 40%;
     }
     .card__texto{        
         padding: 5px 2px 5px 2px;
