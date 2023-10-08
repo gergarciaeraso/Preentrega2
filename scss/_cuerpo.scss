@@ -20,13 +20,14 @@
     @include relleno-lima;
     color: black;
     font-family: 'Changa', sans-serif;
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     &-card{
     @include caja (80px, 100%, 0);
     @include flex-centrado;
     @include relleno-aqua;
     @include estilo-titulo;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
 .card{

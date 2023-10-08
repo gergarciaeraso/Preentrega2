@@ -100,6 +100,7 @@
   background-image: none;
   color: black;
   font-family: "Changa", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .titulo-card {
   height: 80px;
@@ -114,6 +115,7 @@
   color: whitesmoke;
   font-weight: 400;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card {
